@@ -23,10 +23,12 @@ start_time = time.time()
 # Avvio dei thread
 for thread in threads:
     thread.start()
+    print("Thread started")
 
 # Attendo che i thread abbiano finito
 for thread in threads:
     thread.join()
+    print("Thread joined")
 
 end_time = time.time()
 
